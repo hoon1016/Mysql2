@@ -51,8 +51,26 @@
  
  ### 3. limit와 Offset 사용법 (정렬과 함께 사용하는 예도 포함)
  
+ - limit offset은 숫자를 정해놓고 계속 누르면 그 숫자대로 숫자가 증가되면서 화면에 보여준다. 예를 들어
+ - select *
+ - from books limit 5;
+ - 처음엔 5개
+ - select * 
+ - from books limit 5,5;
+ - 이런식으로 점점 증가하게 된다. 
  
+ ### 4. 포함하는 단어 검색하는 like 키워드 사용법
  
+ - 데이터에 포함된 단어를 검색해서 출력할때 쓰는 함수이다. 
+ - select title,author_fname,author_lname
+ - from books
+ - where author_fname like 'da';
+ - 이렇게 쓰면 데이터에 da 두글자가 있는 이름만 나온다. 우리가 하고싶은건 da가 들어간 문장을 찾을려고 하는것이다 아래와 같이 하면된다.
+ 
+ - select title,author_fname,author_lname
+ - from books
+ - where author_fname like '%da%';
+ - %는 다른 글자가 있어도 된다는 뜻을 의미해서 써야지만 da가 들어간 문자열데이터를 불러올수있다.
 
 
 
