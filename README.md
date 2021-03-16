@@ -65,12 +65,18 @@
  - select title,author_fname,author_lname
  - from books
  - where author_fname like 'da';
+ 
+ - ![이미지 6](https://user-images.githubusercontent.com/80316237/111283342-5bdcce80-8682-11eb-9333-3e50fddb0d37.PNG)
+
  - 이렇게 쓰면 데이터에 da 두글자가 있는 이름만 나온다. 우리가 하고싶은건 da가 들어간 문장을 찾을려고 하는것이다 아래와 같이 하면된다.
  
  - select title,author_fname,author_lname
  - from books
  - where author_fname like '%da%';
- - %는 다른 글자가 있어도 된다는 뜻을 의미해서 써야지만 da가 들어간 문자열데이터를 불러올수있다.
+
+![이미지 7](https://user-images.githubusercontent.com/80316237/111283369-639c7300-8682-11eb-91b5-4eab82af8d61.PNG)
+
+- %는 다른 글자가 있어도 된다는 뜻을 의미해서 써야지만 da가 들어간 문자열데이터를 불러올수있다.
 
 
 
